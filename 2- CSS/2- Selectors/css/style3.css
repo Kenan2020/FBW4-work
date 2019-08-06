@@ -1,0 +1,22 @@
+/*div > span{
+    color: red
+}
+div span{
+    color: red
+}
+span span{
+    color: black
+}*/
+/*#div1 p span span{
+    color: blue
+}
+p span span{
+    color: red
+}*/
+/*div:nth-child(2){
+    color: red
+}*/
+
+p:nth-child(3){
+    color: red
+}
