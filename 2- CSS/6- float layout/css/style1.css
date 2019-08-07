@@ -1,0 +1,24 @@
+
+.header, .nav, .footer
+{
+    width: 100%;
+    height: 25px;
+    background-color: aqua;
+    border: 1px solid darkcyan;
+    float: left
+}
+.sidebar{
+    width: 25%;
+    height:500px;
+    background-color: aqua;
+    border: 1px solid darkcyan;
+
+    float: left
+}
+.content{
+    width: 74%;
+    height: 500px;
+    background-color: aqua;
+    border: 1px solid darkcyan;
+    float: left
+}
