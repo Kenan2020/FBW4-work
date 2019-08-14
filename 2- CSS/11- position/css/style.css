@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.father{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    background-color: red;
+}
+
+.someClass{
+    position: relative;
+    background-color: aqua;
+    width: 100px;
+    left: 50px;
+    top: 10px
+}
+.goto{
+    position: fixed;
+    right: 10px;
+    bottom: 10px
+}

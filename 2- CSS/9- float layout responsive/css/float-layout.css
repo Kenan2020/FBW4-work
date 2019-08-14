@@ -1,0 +1,88 @@
+*{
+   box-sizing: border-box
+}
+col-1{/* 100/12 */
+    width: 8.3333333333%
+ }
+ .col-2{
+    width: 16.6666666667%
+ }
+ .col-3{
+    width: 25%
+ }
+ .col-4{
+    width: 33.3333333333%
+ }
+ .col-5{
+    width: 41.6666666667%
+ }
+ .col-6{
+    width: 50%
+ }
+ .col-7{
+    width: 58.3333333333%
+ }
+ .col-8{
+    width: 66.6666666667%
+ }
+ .col-9{
+    width: 75%
+ }
+ .col-10{
+    width: 83.3333333333%
+ }
+ .col-11{
+    width: 91.6666666667%
+ }
+ .col-12{
+    width: 100%
+ }
+[class*="col"]{
+    float: left
+}
+.border{
+   border: 1px solid #333
+}
+.p-3{
+   padding: 3px
+}
+.row{
+   float: left;
+   width: 100%
+}
+.content{
+   padding: 10px
+}
+@media only screen and (max-width: 767px){
+   [class*="col"]{
+      width: 100%
+  }
+  
+}
+@media only screen and (max-width: 988px){
+   .col-4, .col-3, .col-2, .col-1, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-5{
+      width: 100%
+  }
+  .col-6{
+     width: 50%
+  }
+}
+@media only screen and (min-width: 1200px){
+   [class*="col"]{
+      font-size: 20px
+  }
+  
+}
+
+/* ----- Bootstrap 3 -----
+   @media(max-width:767px){}
+   @media(min-width:768px){}
+   @media(min-width:992px){}
+   @media(min-width:1200px){}
+
+   ----- Bootstrap 4 -----
+   @media(min-width:576px){}
+   @media(min-width:768px){}
+   @media(min-width:992px){}
+   @media(min-width:1200px){}
+*/
