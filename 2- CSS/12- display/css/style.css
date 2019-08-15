@@ -1,0 +1,21 @@
+.someClass{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /*visibility: hidden;*/
+    display: none
+}
+.inlineDiv{
+    background-color: red;
+    margin: 5px;
+    display:inline;
+
+}
+.inlineblockDiv{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    margin: 5px;
+    display:inline-block
+
+}
