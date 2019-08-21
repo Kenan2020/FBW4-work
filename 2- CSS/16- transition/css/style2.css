@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0
+}
+#togglebox{
+    display: none
+}
+.toggleButton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+    transition: transform .25s
+}
+.toggleButton:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 5px black
+}
+.navBackground{
+    background-color: #008800;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    transition: transform 2s
+}
+#togglebox:checked + .navBackground{
+    transform: scale(80)
+}
+.navContainer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden
+}
+.nav{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 295px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.nav > ul{
+    list-style-type: none;
+    font-size: 35px
+}
+.nav > ul > li{
+    margin-bottom: 20px;
+    height: 35x;
+    width: 100px;
+    text-align: center;
+    color: white
+}
+#togglebox:checked ~ .nav{
+    display: block
+}
