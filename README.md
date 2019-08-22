@@ -2,4 +2,9 @@
 ----------------
 1- HTML
 2- CSS
+   - position
+   - transform
+   - transition
+   - animation
+   - Flexbox
 

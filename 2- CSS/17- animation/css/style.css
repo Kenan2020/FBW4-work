@@ -1,0 +1,52 @@
+.animatedDiv{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: multiMoves;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+}
+@keyframes oneMove{
+    from{
+        top: 0;
+        left: 0
+    }
+    to{
+        top: 200px;
+        left: 200px;
+        background-color: blue;
+        opacity: 0;
+        border-radius: 10%;
+        width: 150px;
+        height: 150px;
+        transform: rotate(180deg)
+    }
+}
+@keyframes multiMoves{
+    0%{
+        top: 0;
+        left: 0
+    }
+    25%{
+        top: 0;
+        left: 200px;
+        border-radius: 25%
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+        border-radius: 0%
+    }
+    75%{
+        top: 200px;
+        left: 0
+    }
+    100%{
+        top: 0;
+        left: 0
+    }
+}
