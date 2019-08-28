@@ -7,4 +7,7 @@
    - transition
    - animation
    - Flexbox
+   - Grid
+
+display: table
 

@@ -1,0 +1,29 @@
+.container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 10px;
+    justify-content: center;
+
+
+
+    background-color: aqua;
+    padding: 10px;
+}
+.item{
+    background-color: azure;
+
+}
+.text{
+    height: 400px;
+    background-color:rosybrown;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20%
+}
+.text p{
+    background-color: aqua;
+    height: 20%;
+    overflow-y: scroll
+}
