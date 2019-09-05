@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    list-style-type: none;
+    background-color: aqua;
+    height: 50px;
+    align-items: center
+}
+.nav > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    color: wheat;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center
+}
+.nav > li{
+    margin-right: 10px;
+    margin-top: 5px;
+    float: left;
+    background-color: #333;
+    height: 40px;
+    box-shadow: 5px 5px 5px #555;
+    min-width: 150px;
+}
+.nav > li:last-child{
+    float: right;
+    background-color: #080
+}
+.nav > li:first-child{
+    margin-left: 10px
+}
+.nav > li:hover{
+    box-shadow: 1px 1px 10px #222
+}
+.nav > li > a:hover{
+    font-size: 21px
+}
+#togglecheckbox{
+    display: none
+}
+.togglebox label{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #cccccc;
+    display: none
+}
+.togglebox label span{
+    width: 40px;
+    left: 5px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s
+}
+.togglebox label span:nth-child(1){
+    top: 10px
+}
+.togglebox label span:nth-child(2){
+    top: 25px
+}
+.togglebox label span:nth-child(3){
+    top: 40px
+}
+#togglecheckbox:checked ~ .nav{
+    /*display: block*/
+    height: auto
+}
+#togglecheckbox:checked ~ .togglebox label span:nth-child(2){
+    display: none
+}
+#togglecheckbox:checked ~ .togglebox label span:nth-child(1){
+    transform: rotate(45deg);
+    top: 25px
+}
+#togglecheckbox:checked ~ .togglebox label span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 25px
+}
+.nav > li > ul{
+    list-style-type: none;
+    background-color: khaki;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition: width 1s, height 1s, opacity 1s;
+    position: absolute;
+    border-radius: 0 10px 20px 40px;
+    overflow: hidden;
+
+
+}
+.nav > li > ul > li > a{
+    text-decoration: none;
+    background-color: #333;
+    display: block;
+    margin-top: 5px;
+    color: azure;
+    text-align: center;
+    font-weight: bolder;
+
+}
+.nav > li:hover > ul{
+    height: 105px;
+    width: 150px;
+    opacity: 1;
+
+}
+.content > p{
+    background-color: red
+}
+
+
+@media(max-width: 821px){
+    .nav > li{
+        width: 100%;
+        height: auto
+    }
+    .nav > li:first-child{
+        margin-left: 0
+    }
+    .nav > li:last-child{
+        float: left
+    }
+    .nav{
+        height: 235px;
+        /*display: none*/
+        height: 0;
+        overflow: hidden;
+        transition: height 1s cubic-bezier(.23, 1, .32, 1)
+    }
+    .togglebox label{
+        display: block;
+    }
+    .nav > li > ul{
+        list-style-type: none;
+        background-color: khaki;
+    
+        transition: height 1s;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        position: static
+        
+    }
+    .nav > li > ul > li > a{
+        text-decoration: none;
+        background-color: #333;
+        display: block;
+        margin-top: 5px;
+        color: azure;
+        text-align: center;
+        font-weight: bolder;
+    
+    }
+    .nav > li:hover > ul{
+        height: 105px;
+        width: 100%;
+    
+    }
+
+}

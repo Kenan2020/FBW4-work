@@ -1,0 +1,11 @@
+:root{
+    --maincolor:rgba(179, 73, 73, .74);
+    --subcolor: rgba(87, 86, 24, .863);
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color: var(--maincolor);
+}
+p{
+    color: var(--subcolor);
+}
