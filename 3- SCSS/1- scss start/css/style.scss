@@ -1,0 +1,28 @@
+@import "setting";
+
+$firstColor:rgba(165, 111, 111, .849);
+$secondColor: rgba(111, 190, 111, .89);
+
+
+
+.container{
+    font-size: 18px;
+    height: 20px;
+    background-color: burlywood;
+    h3{
+        color:$firstColor;
+    }
+    h1{
+        color: gray;
+    }
+    &>p{
+        color: blue;
+        span{
+            color:$secondColor;
+        }
+    }
+    &:hover{
+        background-color: #333;
+    }
+
+}

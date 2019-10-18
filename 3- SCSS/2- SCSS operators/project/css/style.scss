@@ -1,0 +1,10 @@
+table{
+    height: 100vh;
+    width: 100%;
+
+    @for $var from 1 to 11 {
+        #{"tr:nth-child("$var")"}{
+            background-color: darken(wheat, $var*10%); //lighten
+        }           
+    }    
+}

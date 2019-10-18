@@ -1,0 +1,18 @@
+		SCSS
+------------------------------------
+we need to install this extention 
+
+	Live Sass Compiler
+
+in VSCode
+
+
+_setting.scss will not be compiled to css because it beginn with _ and used to share properties between css files using @import
+
+$variableName: declare a variable
+
+#{"selector"}
+
+
+.scss => compiled to => .css
+.ejs => compiled to => .html
