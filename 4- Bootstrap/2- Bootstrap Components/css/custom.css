@@ -1,0 +1,10 @@
+.height180{
+    max-height: 180px;
+    overflow-y: scroll;
+}
+.imgheight{
+    height: 300px;
+}
+.ui-sortable-helper{
+    cursor: move;
+}

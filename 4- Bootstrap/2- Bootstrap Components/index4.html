@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DataTable</title>
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <table id="myTable" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>math</th>
+                <th>english</th>
+                <th>german</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Moin</td>
+                <td>5</td>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>ali</td>
+                <td>5</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>alaa</td>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>omar</td>
+                <td>9</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>oliver</td>
+                <td>6</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>ahmad</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>jack</td>
+                <td>1</td>
+                <td>5</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>mohamd</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>abdo</td>
+                <td>3</td>
+                <td>5</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>    
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script><!--jQuery UI-->
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+    </script>
+</body>
+</html>

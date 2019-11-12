@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Components: Popup gallery</title>
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+<!--popup window Modal-->
+    <div class="modal fade" id="img1Modal"><!--for image 1-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Image1</div>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img class = "img-thumbnail img-responsive w-100" src="img/forest-1246868_640.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class = "btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img2Modal"><!--for image 2-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Image2</div>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-thumbnail img-responsive" src="img/lake-1246865_640.jpg" alt="">    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img3Modal"><!--for image 3-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Image3</div>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-thumbnail img-responsive" src="img/trees-1246867_640.jpg" alt="">    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img4Modal"><!--for image 4-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Image4</div>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-thumbnail img-responsive" src="img/forest-1246868_640.jpg" alt="">    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img5Modal"><!--for image 5-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Image5</div>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-thumbnail img-responsive" src="img/lake-1246865_640.jpg" alt="">    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img6Modal"><!--for image 6-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Image6</div>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-thumbnail img-responsive" src="img/trees-1246867_640.jpg" alt="">    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ui-sortable" id="sortable">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Image1</div>
+                    <div class="card-body text-center"><a href="#" data-toggle="modal" data-target="#img1Modal"><img class="img-thumbnail img-responsive" src="img/forest-1246868_640.jpg" alt=""></a></div>
+                    <div class="card-footer">Footer1</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Image2</div>
+                    <div class="card-body text-center"><a href="#" data-toggle="modal" data-target="#img2Modal"><img class="img-thumbnail img-responsive" src="img/lake-1246865_640.jpg" alt=""></a></div>
+                    <div class="card-footer">Footer2</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Image3</div>
+                    <div class="card-body text-center"><a href="#" data-toggle="modal" data-target="#img3Modal"><img class="img-thumbnail img-responsive" src="img/trees-1246867_640.jpg" alt=""></a></div>
+                    <div class="card-footer">Footer3</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Image4</div>
+                    <div class="card-body text-center"><a href="#" data-toggle="modal" data-target="#img4Modal"><img class="img-thumbnail img-responsive" src="img/forest-1246868_640.jpg" alt=""></a></div>
+                    <div class="card-footer">Footer4</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Image5</div>
+                    <div class="card-body text-center"><a href="#" data-toggle="modal" data-target="#img5Modal"><img class="img-thumbnail img-responsive" src="img/lake-1246865_640.jpg" alt=""></a></div>
+                    <div class="card-footer">Footer5</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Image6</div>
+                    <div class="card-body text-center"><a href="#" data-toggle="modal" data-target="#img6Modal"><img class="img-thumbnail img-responsive" src="img/trees-1246867_640.jpg" alt=""></a></div>
+                    <div class="card-footer">Footer6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script><!--jQuery UI-->
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('#sortable').sortable({
+            handle: ".card-header"
+        });
+        
+    </script>
+</html>
